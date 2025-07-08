@@ -1,0 +1,19 @@
+{
+  "name": "bible",
+  "version": "1.0.0",
+  "description": "The Bible in JSON, TXT and XML formats.",
+  "license": "ISC",
+  "author": "mrfab",
+  "type": "commonjs",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "eslint": "^9.30.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}

@@ -1,0 +1,78 @@
+{
+    "info": {
+        "book": "Proverbs",
+        "chapter": "2",
+        "translation": "JPS Tanakh 1917 OT",
+        "translationID": "jps",
+        "language": "English",
+        "languageID": "en"
+    },
+    "data": {
+        "1": {
+            "text": "My son, if thou wilt receive my words, And lay up my commandments with thee;"
+        },
+        "2": {
+            "text": "So that thou make thine ear attend unto wisdom, And thy heart incline to discernment;"
+        },
+        "3": {
+            "text": "Yea, if thou call for understanding, And lift up thy voice for discernment;"
+        },
+        "4": {
+            "text": "If thou seek her as silver, And search for her as for hid treasures;"
+        },
+        "5": {
+            "text": "Then shalt thou understand the fear of the LORD, And find the knowledge of God."
+        },
+        "6": {
+            "text": "For the LORD giveth wisdom, Out of His mouth cometh knowledge and discernment;"
+        },
+        "7": {
+            "text": "He layeth up sound wisdom for the upright, He is a shield to them that walk in integrity;"
+        },
+        "8": {
+            "text": "That He may guard the paths of justice, And preserve the way of His godly ones."
+        },
+        "9": {
+            "text": "Then shalt thou understand righteousness and justice, And equity, yea, every good path."
+        },
+        "10": {
+            "text": "For wisdom shall enter into thy heart, And knowledge shall be pleasant unto thy soul;"
+        },
+        "11": {
+            "text": "Discretion shall watch over thee, Discernment shall guard thee;"
+        },
+        "12": {
+            "text": "To deliver thee from the way of evil, From the men that speak froward things;"
+        },
+        "13": {
+            "text": "Who leave the paths of uprightness, To walk in the ways of darkness;"
+        },
+        "14": {
+            "text": "Who rejoice to do evil, And delight in the frowardness of evil;"
+        },
+        "15": {
+            "text": "Who are crooked in their ways, And perverse in their paths;"
+        },
+        "16": {
+            "text": "To deliver thee from the strange woman, Even from the alien woman that maketh smooth her words;"
+        },
+        "17": {
+            "text": "That forsaketh the lord of her youth, And forgetteth the covenant of her God."
+        },
+        "18": {
+            "text": "For her house sinketh down unto death, And her paths unto the shades;"
+        },
+        "19": {
+            "text": "None that go unto her return, Neither do they attain unto the paths of life;"
+        },
+        "20": {
+            "text": "That thou mayest walk in the way of good men, And keep the paths of the righteous."
+        },
+        "21": {
+            "text": "For the upright shall dwell in the land, And the whole-hearted shall remain in it."
+        },
+        "22": {
+            "text": "But the wicked shall be cut off from the land, And the faithless shall be plucked up out of it."
+        }
+    }
+}

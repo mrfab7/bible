@@ -1,0 +1,30 @@
+{
+    "info": {
+        "book": "Job",
+        "chapter": "25",
+        "translation": "JPS Tanakh 1917 OT",
+        "translationID": "jps",
+        "language": "English",
+        "languageID": "en"
+    },
+    "data": {
+        "1": {
+            "text": "Then answered Bildad the Shuhite, and said:"
+        },
+        "2": {
+            "text": "Dominion and fear are with Him; He maketh peace in His high places."
+        },
+        "3": {
+            "text": "Is there any number of His armies? And upon whom doth not His light arise?"
+        },
+        "4": {
+            "text": "How then can man be just with God? Or how can he be clean that is born of a woman?"
+        },
+        "5": {
+            "text": "Behold, even the moon hath no brightness, And the stars are not pure in His sight;"
+        },
+        "6": {
+            "text": "How much less man, that is a worm! And the son of man, that is a maggot!"
+        }
+    }
+}

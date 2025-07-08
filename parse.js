@@ -27,7 +27,7 @@ const BibleBooks = [
     '3 John', 'Jude', 'Revelation',
 ];
 
-console.log(warn('[WARNING] Make sure you enter the correct directory path. If you don\'t, the script will not work as expected and may parse unexpected files.'));
+console.log(warn('[WARNING] Make sure you enter the correct directory path. If you\'t, the script will not work as expected and may parse unexpected files.'));
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -73,11 +73,11 @@ function askQuestions(questions, callback) {
 }
 
 askQuestions([
-    'Directory to parse (./bible/plain): ',
+    'Directory to parse (./queue): ',
     'Language: ',
     'Language ID: '
 ], ([directory, language, languageID]) => {
-    const path = directory || './bible/plain';
+    const path = directory || './queue';
 
     function parseFile(filePath) {
         const log = console.log;
@@ -144,8 +144,8 @@ askQuestions([
                             return line.replace(/^(\d+)[.:]?\s*/, '');
                         });
 
-                        // Convert book name to lowercase for the directory path
-                        const baseDir = `./bible/${format}/${translationId}/${book.toLowerCase()}`;
+                        // Updated baseDir to include languageID before translationId
+                        const baseDir = `./bible/${format}/${languageID}/${translationId}/${book.toLowerCase()}`;
                         ensureDirSync(baseDir);
 
                         if (format === 'txt') {

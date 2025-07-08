@@ -1,0 +1,78 @@
+{
+    "info": {
+        "book": "Proverbs",
+        "chapter": "2",
+        "translation": "Smith's Literal Translation",
+        "translationID": "slt",
+        "language": "English",
+        "languageID": "en"
+    },
+    "data": {
+        "1": {
+            "text": "My son, if thou wilt receive my words, and wilt hide my commands with thee;"
+        },
+        "2": {
+            "text": "To attend to wisdom thou wilt incline thine ear, thy heart to understanding;"
+        },
+        "3": {
+            "text": "For if thou will call to understanding, wilt give thy voice to understanding."
+        },
+        "4": {
+            "text": "If thou wilt seek her as silver, and dig for her as hidden treasure;"
+        },
+        "5": {
+            "text": "Then shalt thou understand the fear of Jehovah, and thou shalt find the knowledge of God."
+        },
+        "6": {
+            "text": "For Jehovah will give wisdom: from his mouth knowledge and understanding."
+        },
+        "7": {
+            "text": "He treasured up deliverance for the upright: a shield to those going in uprightness:"
+        },
+        "8": {
+            "text": "To guard the paths of judgment, and he will watch the way of his godly ones."
+        },
+        "9": {
+            "text": "Then thou shalt understand justice and judgment and uprightness; every good track."
+        },
+        "10": {
+            "text": "For wisdom shall come into thy heart, and knowledge shall be pleasant to thy soul."
+        },
+        "11": {
+            "text": "Meditation shall watch over thee, understanding shall guard thee:"
+        },
+        "12": {
+            "text": "To deliver thee from the evil way, from the man speaking deceit;"
+        },
+        "13": {
+            "text": "Those forsaking the paths of straightness to go in the ways of darkness;"
+        },
+        "14": {
+            "text": "Those rejoicing to do evil will exult in the deceit of evil;"
+        },
+        "15": {
+            "text": "Whose paths are perverted, and in their tracks are bent aside:"
+        },
+        "16": {
+            "text": "To deliver thee from the strange woman, from the stranger making smooth her sayings;"
+        },
+        "17": {
+            "text": "Forsaking the friend of her youth, and forgetting the covenant of her God."
+        },
+        "18": {
+            "text": "For her house sunk down to death, and her tracks to the shades."
+        },
+        "19": {
+            "text": "All going in it shall not turn back, and they shall not overtake the paths of life."
+        },
+        "20": {
+            "text": "So that thou shalt go in the way of the good, and thou shalt watch the paths of the just."
+        },
+        "21": {
+            "text": "For the upright shall dwell in the land, and the blameless shall remain in it."
+        },
+        "22": {
+            "text": "And the unjust shall be cut off from the land, and they transgressing shall be wiped off from it."
+        }
+    }
+}

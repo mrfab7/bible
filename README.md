@@ -1,82 +1,136 @@
-# Bible
-![GitHub commit activity](https://img.shields.io/github/commit-activity/t/mrfab7/bible?logo=github&label=Commits) ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrfab7/bible?logo=github&label=Contributors) ![GitHub License](https://img.shields.io/github/license/mrfab7/bible?label=License)
+<div align="center">
+    <img width="800" height="400" src="assets/Banner.png" alt="Biblia.db">
 
-Welcome to the Bible repository! This project provides a comprehensive collection of Bible data in various easy-to-use formats, suitable for developers, researchers, and anyone looking to integrate biblical texts into their applications or studies.
+![Discord Community](https://img.shields.io/github/last-commit/mrfab7/biblia.db?style=for-the-badge&logo=github&logoColor=%23ffffff&label=Last%20Commit&labelColor=%2323272A%20)
+![Static Badge](https://img.shields.io/badge/-Join%20the%20Discord!-Blue?style=for-the-badge&logo=discord&logoColor=%23ffffff&labelColor=%235865F2&color=%2323272A%20&link=https%3A%2F%2Fdiscord.gg%2F9zzGTZtzcC)
+</div>
+
+Welcome to Biblia's official Bible database! Our goal is to provide many different translations of the Bible, curated to developers.
+Everything here is free to use for commercial and non-commercial purposes.
+
+<details>
+<summary>English translations</summary>
+    
+- Anglicised King James Version (akjv)
+- American Standard Version (asv)
+- Berean Standard Bible (bsb)
+- Catholic Public Domain Version (cpdv)
+- Darby Bible Translation (dbt)
+- Doray-Rheims Bible (drb)
+- English Revised Version (erv)
+- King James Version (kjv)
+- Smith's Literal Translation (slt)
+- Webster Bible Translation (wbt)
+- World English Bible (web)
+- Young's Literal Translation (ylt)
+</details>
+
+
+## To-do
+- [ ] Highlight Jesus' words in either red (HTML) or **bold** (JSON, XML)
+- [ ] Spanish translations
+- [ ] Portuguese translations
+- [ ] French translations
+- [ ] German translations
+- [ ] Polish translations
+- [ ] [ language ] translations
+- [ ] Discord community
+- [ ] Get a good format that's consistent and detailed
+- [ ] Add topics and allow people to contribute via. the discord server.
+- [ ] Create an API
 
 ## Usage
-To begin, simply clone the repository using this command:
-```bash
-git clone --filter=blob:none --no-checkout https://github.com/mrfab7/bible.git
-cd bible
-git sparse-checkout set --cone
-git checkout main
-git sparse-checkout set bible/json
-```
-> [!TIP]
-> You can replace 'json' with 'txt', 'xml', or 'html' to access other formats.
+<details>
+<summary>JSON usage</summary>
+    
+JSON files are structured with 2 main keys; `info` and `data`. Inside `data` you can find all of the verses, alongside a "topic" (basically a header). Inside `info`, you'll find the Chapter, book, translation name and language!
 
-All formats have the same amount of data in them, except for .txt, which misses out on all of the extra info (it'll have it eventually, I'm just kind of lazy)
+> Topic is a work-in-progress. Soon, you'll be able to suggest topics for the database.
 
-In other formats, you'll find an info section containing the book, chapter, translation, translation_id (think about it like an abbreviation of translation), language and language_id (abbreviation of language)
-
-**1. JSON Structure**
 ```json
 {
-    "info": {
-        "book": "John",
-        "chapter": "1",
-        "translation": "Catholic Public Domain Version",
-        "translationID": "cpdv",
-        "language": "English",
-        "languageID": "en"
-    },
+  "info": {
+    "book": "bookName",
+    "chapter": "1",
+    "translation": "Catholic Public Domain Version",
+    "translationID": "cpdv",
+    "language": "English",
+    "languageID": "en"
+  },
     "data": {
         "1": {
-            "text": "In the beginning was the Word, and the Word was with God, and God was the Word."
+            "text": "Verse text",
+            "topic": "Topic 1"
         },
         "2": {
-            "text": "He was with God in the beginning."
+            "text": "Verse text",
+            "topic": "Topic 1"
         },
         "3": {
-            "text": "All things were made through Him, and nothing that was made was made without Him."
-        },
-        "4": {
-            "text": "Life was in Him, and Life was the light of men."
-        },
-        "5": {
-            "text": "And the light shines in the darkness, and the darkness did not comprehend it."
+            "text": "Verse text",
+            "topic": "Topic 2"
         }
+    }
 }
 ```
+</details>
 
-**2. XML Structure**
+<details>
+<summary>XML usage</summary>
+
+XML files are structured with 1 key, chapter. Chapter contains all of your info like book, chapter, translation and language.
+Inside of chapter are all the verses of that chapter, with verse number and topic.
+
+> Topic is a work-in-progress. Soon, you'll be able to suggest topics for the database.
+
 ```xml
-<chapter book="2 Timothy" number="1" translation="Catholic Public Domain Version" translationID="cpdv" language="English" languageID="en">
-  <verse number="1">Paul, an Apostle of Jesus Christ through the will of God, in accord with the promise of the life which is in Christ Jesus,</verse>
-  <verse number="2">to Timothy, most beloved son. Grace, mercy, peace, from God the Father and from Christ Jesus our Lord.</verse>
-  <verse number="3">I give thanks to God, whom I serve, as my forefathers did, with a pure conscience. For without ceasing I hold the remembrance of you in my prayers, night and day,</verse>
-  <verse number="4">desiring to see you, recalling your tears so as to be filled with joy,</verse>
-  <verse number="5">calling to mind the same faith, which is in you unfeigned, which also first dwelt in your grandmother, Lois, and in your mother, Eunice, and also, I am certain, in you.</verse>
+<chapter book="bookName" number="1" translation="Catholic Public Domain Version" translationID="cpdv" language="English" languageID="en">
+    <verse number="1" topic="Topic 1">Verse text</verse>
+    <verse number="2" topic="Topic 1">Verse text</verse>
+    <verse number="3" topic="Topic 2">Verse text</verse>
+    <verse number="4" topic="Topic 2">Verse text</verse>
+    <verse number="5" topic="Topic 2">Verse text</verse>
 </chapter>
 ```
+</details>
 
-**3. HTML Structure**
+</details>
+
+<details>
+<summary>HTML usage</summary>
+
+> ⚠️ Soon, HTML's structure will change completely to incorporate topics and highlighted words.
+
+HTML files are structured with 1 div. The div contains all of your info like book, chapter, translation and language.
+Inside of the div are all the verses of that chapter (as paragraphs), with verse number and topic.
+
+All verses have the class 'verse' and the main div has class 'chapter'.
+
 ```html
-<div class="chapter" data-book="Acts" data-chapter="1" data-translation="Catholic Public Domain Version" data-translation-id="cpdv" data-language="English" data-language-id="en">
-<p class="verse" data-verse="1">Certainly, O Theophilus, I composed the first discourse about everything that Jesus began to do and to teach,</p>
-<p class="verse" data-verse="2">instructing the Apostles, whom he had chosen through the Holy Spirit, even until the day on which he was taken up.</p>
-<p class="verse" data-verse="3">He also presented himself alive to them, after his Passion, appearing to them throughout forty days and speaking about the kingdom of God with many elucidations.</p>
-<p class="verse" data-verse="4">And dining with them, he instructed them that they should not depart from Jerusalem, but that they should wait for the Promise of the Father, “about which you have heard,” he said, “from my own mouth.</p>
-<p class="verse" data-verse="5">For John, indeed, baptized with water, but you shall be baptized with the Holy Spirit, not many days from now.”</p>
+<div class="chapter" data-book="bookName" data-chapter="1" data-translation="Catholic Public Domain Version" data-translation-id="cpdv" data-language="English" data-language-id="en">
+    <p class="verse" data-verse="1">Verse text</p>
+    <p class="verse" data-verse="2">Verse text</p>
+    <p class="verse" data-verse="3">Verse text</p>
+    <p class="verse" data-verse="4">Verse text</p>
+    <p class="verse" data-verse="5">Verse text</p>
 </div>
 ```
+</details>
 
-**4. TXT Structure**
-```
-1	My son, pay attention to my wisdom, and incline your ear to my prudence,
-2	so that you may guard your thinking, and so that your lips may preserve discipline. Do not pay attention to the deceit of a woman.
-3	For the lips of a loose woman are like a dripping honeycomb, and her voice is smoother than oil.
-4	But in the end, she is as bitter as wormwood, and as sharp as a two-edged sword.
-5	Her feet descend into death, and her steps reach even to Hell.
-```
+<details>
+<summary>TXT usage</summary>
 
+It is not recommended to use txt files, as they are less useful while developing. Just use the other formats.
+```
+1 Verse text
+2 Verse text
+3 Verse text
+4 Verse text
+5 Verse text
+```
+</details>
+
+
+    
+    
+</details>

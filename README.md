@@ -5,6 +5,8 @@
 ![Static Badge](https://img.shields.io/badge/-Join%20the%20Discord!-Blue?style=for-the-badge&logo=discord&logoColor=%23ffffff&labelColor=%235865F2&color=%2323272A%20&link=https%3A%2F%2Fdiscord.gg%2F9zzGTZtzcC)
 </div>
 
+---
+
 Welcome to Biblia's official Bible database! Our goal is to provide many different translations of the Bible, curated to developers.
 Everything here is free to use for commercial and non-commercial purposes.
 
